@@ -104,6 +104,31 @@ dönüştürelim.", fontSize = 30.sp,
                         SuggestionChip("Plan oluştur")
                     }
                 }
+Sen gönderdin
+Text(
+    text = "Düşüncelerini\nbirlikte gerçeğe\ndönüştürelim.",
+    fontSize = 30.sp,
+    lineHeight = 38.sp,
+    fontWeight = FontWeight.Bold,
+    color = Color.White
+)
+
+Spacer(Modifier.height(12.dp))
+
+Text(
+    text = "TEORIGY AI ile sohbet et, fikirlerini planla ve işlerini organize et.",
+    color = Muted,
+    fontSize = 14.sp,
+    lineHeight = 21.sp
+)
+
+Spacer(Modifier.height(24.dp))
+
+Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+    SuggestionChip("Fikir üret")
+    SuggestionChip("Plan oluştur")
+}
+                }
             } else {
                 LazyColumn(
                     modifier = Modifier.weight(1f).fillMaxWidth(),
